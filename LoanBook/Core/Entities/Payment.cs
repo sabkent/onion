@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Infrastructure
+namespace Core.Entities
 {
-    public class Class1
+    public class Payment
     {
+        public int PaymentId { get; set; }
+        public decimal Amount { get; set; }
     }
 }
