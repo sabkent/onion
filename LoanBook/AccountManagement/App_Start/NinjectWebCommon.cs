@@ -16,6 +16,7 @@ namespace AccountManagement.App_Start
     using Infrastructure.Data;
     using System.Web.Http;
     using System.Web.Mvc;
+    using Infrastructure;
 
     public static class NinjectWebCommon 
     {
@@ -64,6 +65,8 @@ namespace AccountManagement.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            kernel.Load<NHibernateNinjectModule>();
+
             kernel.Bind<ILoanRepository>().To<LoanRepository>();
 
             

@@ -14,11 +14,13 @@ namespace AccountManagement.Controllers
 
         public HomeController(ILoanRepository loanRepository)
         {
-            _loanRepository = new LoanRepository();
+            _loanRepository = loanRepository;
         }
 
         public ActionResult Index()
         {
+            var loan = _loanRepository.GetById(1);
+
             return View();
         }
     }

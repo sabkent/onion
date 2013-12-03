@@ -42,6 +42,9 @@
     <Compile Include="Data\ILoanRepository.cs" />
     <Compile Include="Entities\Loan.cs" />
     <Compile Include="Entities\Payment.cs" />
+    <Compile Include="Entities\RepaymentSchedule.cs" />
+    <Compile Include="Entities\WeeklyRepaymentSchedule.cs" />
+    <Compile Include="IBootstrap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Application\TakePaymentService.cs" />
     <Compile Include="Services\Domain\LoanPaymentService.cs" />

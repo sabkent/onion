@@ -35,3 +35,10 @@ C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Core.dll
 C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Infrastructure.dll
 C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Core.pdb
 C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Infrastructure.pdb
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\NHibernate.dll
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\FluentNHibernate.dll
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Iesi.Collections.dll
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\NHibernate.xml
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\FluentNHibernate.xml
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Iesi.Collections.xml
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\System.Data.SqlServerCe.dll

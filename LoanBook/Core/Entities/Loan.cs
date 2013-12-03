@@ -8,7 +8,7 @@ namespace Core.Entities
 {
     public class Loan
     {
-        public int Id { get; set; }
-        public decimal OutstandingAmount { get; set; }
+        public virtual int Id { get; set; }
+        public virtual int CustomerId { get; set; }
     }
 }

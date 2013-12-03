@@ -5,3 +5,12 @@ C:\Projects\Sandbox\onion\LoanBook\Infrastructure\obj\Debug\Infrastructure.dll
 C:\Projects\Sandbox\onion\LoanBook\Infrastructure\obj\Debug\Infrastructure.pdb
 C:\Projects\Sandbox\onion\LoanBook\Infrastructure\bin\Debug\Core.dll
 C:\Projects\Sandbox\onion\LoanBook\Infrastructure\bin\Debug\Core.pdb
+C:\Projects\Sandbox\onion\LoanBook\Infrastructure\bin\Debug\FluentNHibernate.dll
+C:\Projects\Sandbox\onion\LoanBook\Infrastructure\bin\Debug\Iesi.Collections.dll
+C:\Projects\Sandbox\onion\LoanBook\Infrastructure\bin\Debug\NHibernate.dll
+C:\Projects\Sandbox\onion\LoanBook\Infrastructure\bin\Debug\Ninject.dll
+C:\Projects\Sandbox\onion\LoanBook\Infrastructure\bin\Debug\FluentNHibernate.xml
+C:\Projects\Sandbox\onion\LoanBook\Infrastructure\bin\Debug\Iesi.Collections.xml
+C:\Projects\Sandbox\onion\LoanBook\Infrastructure\bin\Debug\NHibernate.xml
+C:\Projects\Sandbox\onion\LoanBook\Infrastructure\bin\Debug\Ninject.pdb
+C:\Projects\Sandbox\onion\LoanBook\Infrastructure\bin\Debug\Ninject.xml
