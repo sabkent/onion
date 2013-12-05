@@ -14,6 +14,8 @@ namespace Infrastructure.Data
         {
             Id(x => x.Id).Column("LoanId");
             Map(x => x.CustomerId);
+
+            HasMany(x => x.Payments);
         }
     }
 }

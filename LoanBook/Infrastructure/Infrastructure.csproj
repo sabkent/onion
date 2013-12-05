@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Data\LoanClassMap.cs" />
     <Compile Include="Data\LoanRepository.cs" />
+    <Compile Include="Data\PaymentClassMap.cs" />
     <Compile Include="NHibernateBootstrap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -5,11 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.Data
+namespace Core.Services.Domain
 {
-    public interface ILoanRepository
+    public interface IDeferralService
     {
-        Loan GetById(int loanId);
-        void Add(Loan loan);
+        void Defer(OutstandingLoan outstandingLoan);
     }
 }

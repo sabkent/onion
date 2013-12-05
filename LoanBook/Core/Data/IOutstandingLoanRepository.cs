@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace Core.Data
 {
-    public interface ILoanRepository
+    public interface IOutstandingLoanRepository
     {
-        Loan GetById(int loanId);
-        void Add(Loan loan);
+        OutstandingLoan GetById(int loanId);
     }
 }

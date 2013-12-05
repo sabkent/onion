@@ -8,7 +8,11 @@ namespace Core.Entities
 {
     public class Payment
     {
-        public int PaymentId { get; set; }
-        public decimal Amount { get; set; }
+        public virtual int PaymentId { get; set; }
+        public virtual decimal Amount { get; set; }
+        public virtual DateTime DueDate { get; set; }
+        public virtual int StatusId { get; set; }
+
+        public virtual Loan Loan { get; set; }
     }
 }

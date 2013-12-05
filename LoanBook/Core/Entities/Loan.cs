@@ -10,5 +10,7 @@ namespace Core.Entities
     {
         public virtual int Id { get; set; }
         public virtual int CustomerId { get; set; }
+
+        public virtual IList<Payment> Payments { get; set; }
     }
 }

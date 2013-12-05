@@ -26,5 +26,17 @@ namespace Infrastructure.Data
                 return session.Query<Loan>().FirstOrDefault(l => l.Id == loanId);
             }
         }
+
+        public void Add(Loan loan)
+        {
+            using (var session = _sessionFactory.OpenSession())
+            {
+                using (var transaction = session.BeginTransaction())
+                {
+                    session.Save(loan);
+                    transaction.Commit();
+                }
+            }
+        }
     }
 }
