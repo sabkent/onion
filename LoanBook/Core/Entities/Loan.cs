@@ -9,7 +9,7 @@ namespace Core.Entities
     public class Loan
     {
         public virtual int Id { get; set; }
-        public virtual int CustomerId { get; set; }
+        public virtual int? CustomerId { get; set; }
 
         public virtual IList<Payment> Payments { get; set; }
     }

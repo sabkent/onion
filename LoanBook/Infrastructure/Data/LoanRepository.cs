@@ -32,7 +32,7 @@ namespace Infrastructure.Data
             using (var session = _sessionFactory.OpenSession())
             {
                 using (var transaction = session.BeginTransaction())
-                {
+                {                    
                     session.Save(loan);
                     transaction.Commit();
                 }
