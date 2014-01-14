@@ -86,3 +86,4 @@ C:\Project\Git\onion\LoanBook\AccountManagement\bin\Iesi.Collections.xml
 C:\Project\Git\onion\LoanBook\AccountManagement\obj\Debug\AccountManagement.csprojResolveAssemblyReference.cache
 C:\Project\Git\onion\LoanBook\AccountManagement\obj\Debug\AccountManagement.dll
 C:\Project\Git\onion\LoanBook\AccountManagement\obj\Debug\AccountManagement.pdb
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\AccountManagement.dll.config

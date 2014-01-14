@@ -16,6 +16,7 @@ namespace Infrastructure.Data
             Map(x => x.DueDate);
             Map(x => x.Amount);
             Map(x => x.StatusId);
+            Map(x => x.LoanId);
 
             //References(x => x.Loan).Column("LoanId").Not.Nullable();
         }

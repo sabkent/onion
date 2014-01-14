@@ -12,7 +12,7 @@ namespace Core.Entities
         public virtual decimal Amount { get; set; }
         public virtual DateTime DueDate { get; set; }
         public virtual int StatusId { get; set; }
-
+        public virtual  int LoanId{ get; set; }
         //public virtual Loan Loan { get; set; }
     }
 }
