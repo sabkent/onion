@@ -17,9 +17,16 @@ namespace Infrastructure.Data
 
             //http://stackoverflow.com/questions/11182177/with-fluent-nhibernate-i-cant-get-child-objects-to-save-with-parent-object-id-i
             //http://stackoverflow.com/questions/5235311/fluent-nhibernate-cascade-issue-trying-to-insert-null-id
+            //HasMany(x => x.Payments).KeyColumn("LoanId")
+            //                        .Cascade
+            //                        .All();
+
+
             HasMany(x => x.Payments).KeyColumn("LoanId")
-                                    .Cascade
-                                    .All();                
+                                    //.Inverse()
+                                    .Cascade.All();
+                                    //.Not.LazyLoad();
+
         }
     }
 }

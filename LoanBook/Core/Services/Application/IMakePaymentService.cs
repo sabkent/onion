@@ -1,7 +1,8 @@
-﻿namespace Core.Services.Application
+﻿using Core.Commands;
+namespace Core.Services.Application
 {
     public interface IMakePaymentService
     {
-        void MakePayment(int loan, decimal amount);
+        void MakePayment(MakePaymentCommand makePaymentCommand);
     }
 }

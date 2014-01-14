@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\MakePaymentCommand.cs" />
     <Compile Include="Data\ILoanRepository.cs" />
     <Compile Include="Entities\Loan.cs" />
     <Compile Include="Entities\Payment.cs" />

@@ -12,5 +12,10 @@ namespace Core.Entities
         public virtual int? CustomerId { get; set; }
 
         public virtual IList<Payment> Payments { get; set; }
+
+        public virtual void AcceptPayment(Payment payment)
+        {
+            Payments.Add(payment);
+        }
     }
 }

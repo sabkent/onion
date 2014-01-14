@@ -5,31 +5,42 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Core.Services.Application;
+using AccountManagement.ViewModels;
+using Core.Commands;
 
 namespace AccountManagement.Controllers
 {
     public class MakePaymentController : Controller
     {
-        private ILoanRepository _LoanRepository;
+        private IMakePaymentService _makePaymentService;
 
-        public MakePaymentController(ILoanRepository loanRepository)
+        public MakePaymentController(IMakePaymentService makePaymentService)
         {
-            _LoanRepository = loanRepository;
+            _makePaymentService = makePaymentService;
         }
-
 
         public ActionResult Index()
         {
-            var loan = new Loan
-                {
-                    CustomerId = 1,
-                    Payments = new List<Payment>
-                        {
-                            new Payment{Amount = 129.95m, DueDate = DateTime.Now.AddDays(10), StatusId = 1}
-                        }
-                };
+            DependencyResolver.Current.GetService<ILoanRepository>()
+                              .Add(new Loan
+                                  {
+                                      CustomerId = 1,
+                                      Payments =
+                                          new List<Payment>
+                                              {
+                                                  new Payment {Amount = 100, DueDate = DateTime.Now, StatusId = 1}
+                                              }
+                                  });
+            return View();
+        }
 
-            _LoanRepository.Add(loan);
+        [HttpPost]
+        public ActionResult Index(MakePaymentViewModel makePaymentViewModel)
+        {
+            var makePaymentCommand = new MakePaymentCommand(makePaymentViewModel.LoanId, makePaymentViewModel.Amount);
+
+            _makePaymentService.MakePayment(makePaymentCommand);
 
             return View();
         }

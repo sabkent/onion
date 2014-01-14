@@ -13,6 +13,6 @@ namespace Core.Entities
         public virtual DateTime DueDate { get; set; }
         public virtual int StatusId { get; set; }
 
-        public virtual Loan Loan { get; set; }
+        //public virtual Loan Loan { get; set; }
     }
 }

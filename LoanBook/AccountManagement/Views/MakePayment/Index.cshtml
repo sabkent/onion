@@ -1,5 +1,13 @@
-﻿@{
+﻿@model AccountManagement.ViewModels.MakePaymentViewModel
+@{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+@using (Html.BeginForm())
+{
+    @Html.EditorFor(x=>x.LoanId)
+    @Html.EditorFor(x => x.Amount)
+    
+    
+    <input type="submit" />
+}

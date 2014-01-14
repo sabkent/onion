@@ -1,4 +1,6 @@
-﻿using Core.Data;
+﻿using Core.Commands;
+using Core.Data;
+using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,9 +19,13 @@ namespace Core.Services.Application
             _loanRepository = loanRepository;
         }
 
-        public void MakePayment(int loan, decimal amount)
+        public void MakePayment(MakePaymentCommand makePaymentCommand)
         {
-            
+            var loan = _loanRepository.GetById(makePaymentCommand.LoanId);
+
+            var payment = new Payment {Amount = makePaymentCommand.Amount};
+
+            loan.AcceptPayment(payment);
         }
     }
 }
