@@ -1,0 +1,7 @@
+C:\Projects\Sandbox\onion\LoanBook\Services\bin\Debug\Services.dll
+C:\Projects\Sandbox\onion\LoanBook\Services\bin\Debug\Services.pdb
+C:\Projects\Sandbox\onion\LoanBook\Services\bin\Debug\Core.dll
+C:\Projects\Sandbox\onion\LoanBook\Services\bin\Debug\Core.pdb
+C:\Projects\Sandbox\onion\LoanBook\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+C:\Projects\Sandbox\onion\LoanBook\Services\obj\Debug\Services.dll
+C:\Projects\Sandbox\onion\LoanBook\Services\obj\Debug\Services.pdb
