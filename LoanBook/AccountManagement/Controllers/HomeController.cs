@@ -1,11 +1,7 @@
 ﻿using Core.Data;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using Core.Entities;
-using Infrastructure.Data;
 
 namespace AccountManagement.Controllers
 {
@@ -25,11 +21,12 @@ namespace AccountManagement.Controllers
                 CustomerId = 1,
                 Amount = 150,
                 DueDate = DateTime.Now
+                
             };
             loan.AcceptPayment(new Payment
             {
                 Amount = 150,
-                DueDate = DateTime.Now
+                Date = DateTime.Now
             });
 
             _loanRepository.Add(loan);

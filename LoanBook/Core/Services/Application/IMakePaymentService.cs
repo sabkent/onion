@@ -3,6 +3,6 @@ namespace Core.Services.Application
 {
     public interface IMakePaymentService
     {
-        void MakePayment(MakePaymentCommand makePaymentCommand);
+        MakePaymentResult MakePayment(MakePaymentCommand makePaymentCommand);
     }
 }

@@ -8,20 +8,21 @@ namespace Services.Application
     public class MakePaymentService : IMakePaymentService
     {
         private readonly ILoanRepository _loanRepository;
-
-
+        
         public MakePaymentService(ILoanRepository loanRepository)
         {
             _loanRepository = loanRepository;
         }
 
-        public void MakePayment(MakePaymentCommand makePaymentCommand)
+        public MakePaymentResult MakePayment(MakePaymentCommand makePaymentCommand)
         {
             var loan = _loanRepository.GetById(makePaymentCommand.LoanId);
-
+            
             var payment = new Payment {Amount = makePaymentCommand.Amount};
 
-            //loan.AcceptPayment(payment);
+            loan.AcceptPayment(payment);
+
+            return new MakePaymentResult();
         }
     }
 }

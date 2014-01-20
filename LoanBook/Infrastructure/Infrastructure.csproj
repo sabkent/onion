@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContainerCommandDispatcher.cs" />
     <Compile Include="Data\LoanClassMap.cs" />
     <Compile Include="Data\LoanRepository.cs" />
     <Compile Include="Data\PaymentClassMap.cs" />

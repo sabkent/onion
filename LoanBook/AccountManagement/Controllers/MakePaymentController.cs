@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Web.Mvc;
+using Core;
 using Core.Services.Application;
 using AccountManagement.ViewModels;
 using Core.Commands;
@@ -11,6 +12,7 @@ namespace AccountManagement.Controllers
     {
         private readonly IRepaymentReadModelRepository _repaymentReadModelRepository;
         private readonly IMakePaymentService _makePaymentService;
+        private readonly IDispatchCommands _commandDispatcher;
 
         public MakePaymentController(IRepaymentReadModelRepository repaymentReadModelRepository, IMakePaymentService makePaymentService)
         {
@@ -28,6 +30,8 @@ namespace AccountManagement.Controllers
         public ActionResult Index(MakePaymentViewModel makePaymentViewModel)
         {
             var makePaymentCommand = new MakePaymentCommand(makePaymentViewModel.LoanId, makePaymentViewModel.Amount);
+
+            _commandDispatcher.Dispatch(makePaymentCommand);
 
             _makePaymentService.MakePayment(makePaymentCommand);
 

@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application\MakePaymentService.cs" />
+    <Compile Include="CommandHandlers\MakePaymentCommandHandler.cs" />
     <Compile Include="Domain\LoanPaymentService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

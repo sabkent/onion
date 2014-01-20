@@ -1,7 +1,6 @@
 ﻿using Core.Entities;
 using FluentNHibernate.Mapping;
 
-
 namespace Infrastructure.Data
 {
     public class LoanClassMap : ClassMap<Loan>
