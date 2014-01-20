@@ -1,9 +1,8 @@
-C:\Projects\Sandbox\onion\LoanBook\Core\bin\Debug\Core.dll
-C:\Projects\Sandbox\onion\LoanBook\Core\bin\Debug\Core.pdb
-C:\Projects\Sandbox\onion\LoanBook\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
-C:\Projects\Sandbox\onion\LoanBook\Core\obj\Debug\Core.dll
-C:\Projects\Sandbox\onion\LoanBook\Core\obj\Debug\Core.pdb
 C:\Project\Git\onion\LoanBook\Core\bin\Debug\Core.dll
 C:\Project\Git\onion\LoanBook\Core\bin\Debug\Core.pdb
 C:\Project\Git\onion\LoanBook\Core\obj\Debug\Core.dll
 C:\Project\Git\onion\LoanBook\Core\obj\Debug\Core.pdb
+C:\Projects\Sandbox\onion\LoanBook\Core\bin\Debug\Core.dll
+C:\Projects\Sandbox\onion\LoanBook\Core\bin\Debug\Core.pdb
+C:\Projects\Sandbox\onion\LoanBook\Core\obj\Debug\Core.dll
+C:\Projects\Sandbox\onion\LoanBook\Core\obj\Debug\Core.pdb

@@ -20,16 +20,19 @@ namespace AccountManagement.Controllers
 
         public ActionResult Index()
         {
-            //var loan = _loanRepository.GetById(1);
+            var loan = new Loan
+            {
+                CustomerId = 1,
+                Amount = 150,
+                DueDate = DateTime.Now
+            };
+            loan.AcceptPayment(new Payment
+            {
+                Amount = 150,
+                DueDate = DateTime.Now
+            });
 
-            _loanRepository.Add(new Loan
-                {
-                    CustomerId = 1,
-                    Payments = new List<Payment>
-                        {
-                            new Payment{Amount = 100, DueDate = DateTime.Now, StatusId = 1}
-                        }
-                });
+            _loanRepository.Add(loan);
 
             return View();
         }

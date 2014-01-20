@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement", "AccountManagement\AccountManagement.csproj", "{10DEAF61-1E3F-45FD-B930-1FB67CB40250}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{6B76ACE8-1778-4521-93A2-53899CF58AF6}"
@@ -8,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{74C45FDB-E279-4126-BD58-215FB0F81B46}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{AD595B14-1D14-4F27-82DD-B5BA94EE3892}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{A966A049-469D-424A-BBD6-26E992D76602}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +35,10 @@ Global
 		{AD595B14-1D14-4F27-82DD-B5BA94EE3892}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD595B14-1D14-4F27-82DD-B5BA94EE3892}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD595B14-1D14-4F27-82DD-B5BA94EE3892}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A966A049-469D-424A-BBD6-26E992D76602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A966A049-469D-424A-BBD6-26E992D76602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A966A049-469D-424A-BBD6-26E992D76602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A966A049-469D-424A-BBD6-26E992D76602}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

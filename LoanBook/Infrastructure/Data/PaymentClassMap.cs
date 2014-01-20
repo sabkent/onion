@@ -12,13 +12,11 @@ namespace Infrastructure.Data
     {
         public PaymentClassMap()
         {
-            Id(x => x.PaymentId).GeneratedBy.Native();
+            Id(x => x.PaymentId);
             Map(x => x.DueDate);
             Map(x => x.Amount);
-            Map(x => x.StatusId);
-            Map(x => x.LoanId);
 
-            //References(x => x.Loan).Column("LoanId").Not.Nullable();
+            References(x => x.Loan).Column("LoanId").Not.Nullable();
         }
     }
 }

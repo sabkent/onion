@@ -22,17 +22,28 @@ namespace Infrastructure
 
         public ISessionFactory BuildSessionFactory(IContext context)
         {
-            var connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["main"].ConnectionString;
+            var connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["Seb"].ConnectionString;
 
             return Fluently.Configure()
-            .Database(MsSqlCeConfiguration.Standard
+            .Database(MsSqlConfiguration.MsSql2008
             .ConnectionString(connectionString)
             .ShowSql()
-            .Driver<NHibernate.Driver.SqlServerCeDriver>()
-            .Dialect<FixedMsSqlCe40Dialect>())
+            .Dialect<MsSql2008Dialect>())
             .Mappings(m => m.FluentMappings.AddFromAssembly(System.Reflection.Assembly.GetExecutingAssembly()))
             .ExposeConfiguration(x => x.SetProperty("connection.release_mode", "on_close"))
             .BuildConfiguration().BuildSessionFactory();
+
+            //var connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["main"].ConnectionString;
+
+            //return Fluently.Configure()
+            //.Database(MsSqlCeConfiguration.Standard
+            //.ConnectionString(connectionString)
+            //.ShowSql()
+            //.Driver<NHibernate.Driver.SqlServerCeDriver>()
+            //.Dialect<FixedMsSqlCe40Dialect>())
+            //.Mappings(m => m.FluentMappings.AddFromAssembly(System.Reflection.Assembly.GetExecutingAssembly()))
+            //.ExposeConfiguration(x => x.SetProperty("connection.release_mode", "on_close"))
+            //.BuildConfiguration().BuildSessionFactory();
         }
     }
 

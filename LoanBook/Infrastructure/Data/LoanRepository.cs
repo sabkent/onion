@@ -23,7 +23,7 @@ namespace Infrastructure.Data
         {
             using (var session = _sessionFactory.OpenSession())
             {
-                return session.Query<Loan>().FirstOrDefault(l => l.Id == loanId);
+                return session.Query<Loan>().FirstOrDefault(l => l.LoanId == loanId);
             }
         }
 

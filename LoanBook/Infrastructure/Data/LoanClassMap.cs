@@ -1,10 +1,6 @@
 ﻿using Core.Entities;
 using FluentNHibernate.Mapping;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Infrastructure.Data
 {
@@ -12,8 +8,12 @@ namespace Infrastructure.Data
     {
         public LoanClassMap()
         {
-            Id(x => x.Id).Column("LoanId").GeneratedBy.Native();
+            Id(x => x.LoanId);//.Column("LoanId").GeneratedBy.Native();
             Map(x => x.CustomerId);
+            Map(x => x.Amount);
+            Map(x => x.DueDate);
+
+            HasMany(x => x.Payments).KeyColumn("LoanId").Cascade.All();
 
             //http://stackoverflow.com/questions/11182177/with-fluent-nhibernate-i-cant-get-child-objects-to-save-with-parent-object-id-i
             //http://stackoverflow.com/questions/5235311/fluent-nhibernate-cascade-issue-trying-to-insert-null-id
@@ -22,10 +22,10 @@ namespace Infrastructure.Data
             //                        .All();
 
 
-            HasMany(x => x.Payments).KeyColumn("LoanId")
-                                    //.Inverse()
-                                    .Cascade.All();
-                                    //.Not.LazyLoad();
+            //HasMany(x => x.Payments).KeyColumn("LoanId")
+            //.Inverse()
+            //.Cascade.All();
+            //.Not.LazyLoad();
 
         }
     }

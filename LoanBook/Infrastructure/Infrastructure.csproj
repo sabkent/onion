@@ -57,6 +57,7 @@
     <Compile Include="Data\PaymentClassMap.cs" />
     <Compile Include="NHibernateBootstrap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadModel\RepaymentReadModelRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj">

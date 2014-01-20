@@ -1,13 +1,9 @@
 ﻿using Core.Commands;
 using Core.Data;
 using Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Core.Services.Application;
 
-namespace Core.Services.Application
+namespace Services.Application
 {
     public class MakePaymentService : IMakePaymentService
     {
@@ -25,7 +21,7 @@ namespace Core.Services.Application
 
             var payment = new Payment {Amount = makePaymentCommand.Amount};
 
-            loan.AcceptPayment(payment);
+            //loan.AcceptPayment(payment);
         }
     }
 }

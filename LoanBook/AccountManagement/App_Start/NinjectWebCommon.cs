@@ -1,4 +1,5 @@
 using AccountManagement.Web.Common;
+using Services.Application;
 
 [assembly: WebActivator.PreApplicationStartMethod(typeof(AccountManagement.App_Start.NinjectWebCommon), "Start")]
 [assembly: WebActivator.ApplicationShutdownMethodAttribute(typeof(AccountManagement.App_Start.NinjectWebCommon), "Stop")]
