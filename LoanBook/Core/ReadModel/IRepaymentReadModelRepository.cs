@@ -10,5 +10,7 @@ namespace Core.ReadModel
     public interface IRepaymentReadModelRepository
     {
         IEnumerable<Repayment> GetAllForLoan(int loanId);
+
+        void Add(Repayment repayment);
     }
 }

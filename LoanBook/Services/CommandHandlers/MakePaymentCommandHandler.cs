@@ -2,6 +2,7 @@
 using Core.Data;
 using System;
 using Core.Entities;
+using Core.ReadModel.Projections;
 
 namespace Services.CommandHandlers
 {
@@ -21,6 +22,8 @@ namespace Services.CommandHandlers
             var payment = new Payment {Amount = command.Amount};
 
             loan.AcceptPayment(payment);
+
+            _loanRepository.Add(loan);
         }
     }
 }

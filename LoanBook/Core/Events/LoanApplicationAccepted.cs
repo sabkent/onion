@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.ReadModel
+namespace Core.Events
 {
-    public sealed class Repayment
+    public sealed class LoanApplicationAccepted
     {
         public int LoanId { get; set; }
-        public decimal Amount { get; set; }
-        public DateTime PaidDate { get; set; }
     }
 }
