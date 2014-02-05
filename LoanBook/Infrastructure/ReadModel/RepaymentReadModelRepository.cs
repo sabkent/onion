@@ -17,5 +17,11 @@ namespace Infrastructure.ReadModel
                 new Repayment()
             };
         }
+
+
+        public void Add(Repayment repayment)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

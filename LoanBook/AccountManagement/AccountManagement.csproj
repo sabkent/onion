@@ -121,13 +121,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\NinjectWebCommon.cs" />
+    <Compile Include="Controllers\ApplyController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MakePaymentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModelLabels.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewModelLabels.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\ApplyForLoanViewModel.cs" />
     <Compile Include="ViewModels\MakePaymentViewModel.cs" />
+    <Compile Include="ViewModels\PaymentPlanViewModel.cs" />
+    <Compile Include="ViewModelValidationErrors.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewModelValidationErrors.resx</DependentUpon>
+    </Compile>
     <Compile Include="Web.Common\NinjectDependencyResolver.cs" />
     <Compile Include="Web.Common\NinjectDependencyScope.cs" />
   </ItemGroup>
@@ -171,6 +184,25 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\MakePayment\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Apply\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ViewModelLabels.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ViewModelLabels.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModelValidationErrors.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ViewModelValidationErrors.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Apply\DisplayTemplates\PaymentPlanViewModel.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Apply\Complete.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

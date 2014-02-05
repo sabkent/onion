@@ -89,3 +89,6 @@ C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Iesi.Collections.xml
 C:\Projects\Sandbox\onion\LoanBook\AccountManagement\obj\Debug\AccountManagement.csprojResolveAssemblyReference.cache
 C:\Projects\Sandbox\onion\LoanBook\AccountManagement\obj\Debug\AccountManagement.dll
 C:\Projects\Sandbox\onion\LoanBook\AccountManagement\obj\Debug\AccountManagement.pdb
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\obj\Debug\AccountManagement.ViewModelLabels.resources
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\obj\Debug\AccountManagement.csproj.GenerateResource.Cache
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\obj\Debug\AccountManagement.ViewModelValidationErrors.resources

@@ -1,0 +1,18 @@
+﻿+@model ApplyForLoanViewModel
+@{
+    ViewBag.Title = "Index";
+}
+@Html.LabelFor(x=>x.FirstName)
+
+@using (Html.BeginForm("ApplyForLoan", "Apply"))
+{
+    @Html.TextBoxFor(x => x.Amount)
+    @Html.TextBoxFor(x => x.FirstName)
+    
+    
+    <button type="submit" value="Submit"></button>
+    @Html.ValidationSummary()
+    
+}
+
+
