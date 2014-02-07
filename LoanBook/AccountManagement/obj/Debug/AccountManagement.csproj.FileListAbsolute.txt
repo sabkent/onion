@@ -92,3 +92,14 @@ C:\Projects\Sandbox\onion\LoanBook\AccountManagement\obj\Debug\AccountManagement
 C:\Projects\Sandbox\onion\LoanBook\AccountManagement\obj\Debug\AccountManagement.ViewModelLabels.resources
 C:\Projects\Sandbox\onion\LoanBook\AccountManagement\obj\Debug\AccountManagement.csproj.GenerateResource.Cache
 C:\Projects\Sandbox\onion\LoanBook\AccountManagement\obj\Debug\AccountManagement.ViewModelValidationErrors.resources
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Microsoft.Owin.dll
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Microsoft.Owin.Security.dll
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Owin.dll
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Microsoft.Owin.xml
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Microsoft.Owin.Security.xml

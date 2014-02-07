@@ -1,5 +1,29 @@
 ﻿@{
     ViewBag.Title = "Complete";
 }
+<script src="~/Scripts/jquery-1.6.4.min.js"></script>
+<script src="~/Scripts/jquery.signalR-2.0.2.min.js"></script>
+<script src="/SignalR/Hubs"></script>
 
-<h2>Complete</h2>
+<input id="signalCmd" type="button" value="signal me">
+
+@section scripts{
+    
+    <script>
+        var loanApplication = $.connection.loanApplication;
+        loanApplication.client.complete = function () {
+            console.log('loan application complete');
+        };
+
+        $.connection.hub.start().done(function () { });
+    </script>    
+    
+    
+    <script>
+        $('#signalCmd').click(function() {
+            $.ajax({
+                url : '/apply/test'
+            });
+        });
+    </script>
+}

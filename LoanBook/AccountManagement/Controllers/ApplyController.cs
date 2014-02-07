@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using AccountManagement.Hubs;
 using AccountManagement.ViewModels;
 using Core;
 using Core.Commands;
+using Microsoft.AspNet.SignalR;
 
 namespace AccountManagement.Controllers
 {
@@ -38,8 +40,6 @@ namespace AccountManagement.Controllers
             {
                 var applyForLoanCommand = new ApplyForLoan {Amount = model.Amount, FirstName = model.FirstName};
                 _dispatchCommands.Dispatch(applyForLoanCommand);
-
-
             }
          //   else { }
 
@@ -49,6 +49,13 @@ namespace AccountManagement.Controllers
         public ActionResult Complete()
         {
             return View();
+        }
+
+        public void Test()
+        {
+            var applicationHub = GlobalHost.ConnectionManager.GetHubContext<LoanApplication>();
+
+            applicationHub.Clients.All.complete();
         }
     }
 }
