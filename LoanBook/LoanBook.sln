@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountManagement", "AccountManagement\AccountManagement.csproj", "{10DEAF61-1E3F-45FD-B930-1FB67CB40250}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{AD595B14-1D14-4F27-82DD-B5BA94EE3892}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{A966A049-469D-424A-BBD6-26E992D76602}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messaging.ClientSide", "Messaging.ClientSide\Messaging.ClientSide.csproj", "{B808A3FB-A10B-476A-A2A7-5CCE9C56B8E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{A966A049-469D-424A-BBD6-26E992D76602}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A966A049-469D-424A-BBD6-26E992D76602}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A966A049-469D-424A-BBD6-26E992D76602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B808A3FB-A10B-476A-A2A7-5CCE9C56B8E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B808A3FB-A10B-476A-A2A7-5CCE9C56B8E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B808A3FB-A10B-476A-A2A7-5CCE9C56B8E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B808A3FB-A10B-476A-A2A7-5CCE9C56B8E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

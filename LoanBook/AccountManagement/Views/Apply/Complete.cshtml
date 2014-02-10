@@ -15,7 +15,9 @@
             console.log('loan application complete');
         };
 
-        $.connection.hub.start().done(function () { });
+        $.connection.hub.start().done(function() {
+            console.log('signalr ready');
+        });
     </script>    
     
     

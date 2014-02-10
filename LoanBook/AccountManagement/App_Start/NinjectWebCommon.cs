@@ -1,8 +1,10 @@
 using AccountManagement.Web.Common;
 using Core;
 using Core.Commands;
+using Core.Events;
 using Services.Application;
 using Services.CommandHandlers;
+using Services.EventSubscribers;
 
 [assembly: WebActivator.PreApplicationStartMethod(typeof(AccountManagement.App_Start.NinjectWebCommon), "Start")]
 [assembly: WebActivator.ApplicationShutdownMethodAttribute(typeof(AccountManagement.App_Start.NinjectWebCommon), "Stop")]
@@ -75,8 +77,11 @@ namespace AccountManagement.App_Start
             kernel.Bind<ILoanRepository>().To<LoanRepository>();
             kernel.Bind<IMakePaymentService>().To<MakePaymentService>();
             kernel.Bind<IDispatchCommands>().To<ContainerCommandDispatcher>();
-            kernel.Bind<IHandleCommand<ApplyForLoan>>().To<ApplyForLoanCommandHandler>();
             kernel.Bind<IRaiseEvents>().To<ContainerEventPublisher>();
+
+            kernel.Bind<IHandleCommand<ApplyForLoan>>().To<ApplyForLoanCommandHandler>();
+
+            kernel.Bind<ISubscribeToEvent<LoanApplicationAccepted>>().To<LoanApplicationAcceptedSignalClient>();
         }        
     }
 }

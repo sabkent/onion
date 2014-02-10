@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using AccountManagement.Hubs;
 using AccountManagement.ViewModels;
 using Core;
 using Core.Commands;
+using Messaging.ClientSide;
 using Microsoft.AspNet.SignalR;
 
 namespace AccountManagement.Controllers
@@ -43,7 +43,7 @@ namespace AccountManagement.Controllers
             }
          //   else { }
 
-           return View("Index",model);
+            return RedirectToAction("Complete");
         }
 
         public ActionResult Complete()

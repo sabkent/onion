@@ -1,0 +1,15 @@
+C:\Projects\Sandbox\onion\LoanBook\Messaging.ClientSide\bin\Debug\Messaging.ClientSide.dll.config
+C:\Projects\Sandbox\onion\LoanBook\Messaging.ClientSide\bin\Debug\Messaging.ClientSide.dll
+C:\Projects\Sandbox\onion\LoanBook\Messaging.ClientSide\bin\Debug\Messaging.ClientSide.pdb
+C:\Projects\Sandbox\onion\LoanBook\Messaging.ClientSide\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+C:\Projects\Sandbox\onion\LoanBook\Messaging.ClientSide\bin\Debug\Microsoft.Owin.dll
+C:\Projects\Sandbox\onion\LoanBook\Messaging.ClientSide\bin\Debug\Microsoft.Owin.Security.dll
+C:\Projects\Sandbox\onion\LoanBook\Messaging.ClientSide\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\Sandbox\onion\LoanBook\Messaging.ClientSide\bin\Debug\Owin.dll
+C:\Projects\Sandbox\onion\LoanBook\Messaging.ClientSide\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+C:\Projects\Sandbox\onion\LoanBook\Messaging.ClientSide\bin\Debug\Microsoft.Owin.xml
+C:\Projects\Sandbox\onion\LoanBook\Messaging.ClientSide\bin\Debug\Microsoft.Owin.Security.xml
+C:\Projects\Sandbox\onion\LoanBook\Messaging.ClientSide\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\Sandbox\onion\LoanBook\Messaging.ClientSide\obj\Debug\Messaging.ClientSide.csprojResolveAssemblyReference.cache
+C:\Projects\Sandbox\onion\LoanBook\Messaging.ClientSide\obj\Debug\Messaging.ClientSide.dll
+C:\Projects\Sandbox\onion\LoanBook\Messaging.ClientSide\obj\Debug\Messaging.ClientSide.pdb

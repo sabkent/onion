@@ -148,7 +148,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Hubs\LoanApplication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModelLabels.Designer.cs">
@@ -204,6 +203,10 @@
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj">
       <Project>{74c45fdb-e279-4126-bd58-215fb0f81b46}</Project>
       <Name>Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Messaging.ClientSide\Messaging.ClientSide.csproj">
+      <Project>{b808a3fb-a10b-476a-a2a7-5cce9c56b8e1}</Project>
+      <Name>Messaging.ClientSide</Name>
     </ProjectReference>
     <ProjectReference Include="..\Services\Services.csproj">
       <Project>{a966a049-469d-424a-bbd6-26e992d76602}</Project>

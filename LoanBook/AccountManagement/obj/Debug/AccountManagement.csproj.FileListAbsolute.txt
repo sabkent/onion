@@ -103,3 +103,5 @@ C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Microsoft.AspNet.Signal
 C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Microsoft.Owin.xml
 C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Microsoft.Owin.Host.SystemWeb.xml
 C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Microsoft.Owin.Security.xml
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Messaging.ClientSide.dll
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Messaging.ClientSide.pdb
