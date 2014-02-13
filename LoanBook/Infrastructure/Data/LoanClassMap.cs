@@ -8,7 +8,8 @@ namespace Infrastructure.Data
         public LoanClassMap()
         {
             Id(x => x.LoanId);//.Column("LoanId").GeneratedBy.Native();
-            Map(x => x.CustomerId);
+            //Map(x => x.CustomerId);
+            References(x => x.Customer).Column("CustomerId").Cascade.All();
             Map(x => x.Amount);
             Map(x => x.DueDate);
 

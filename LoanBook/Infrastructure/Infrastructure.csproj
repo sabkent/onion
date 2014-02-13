@@ -36,6 +36,12 @@
     <Reference Include="Iesi.Collections">
       <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
     </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\packages\mongocsharpdriver.1.8.3\lib\net35\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\packages\mongocsharpdriver.1.8.3\lib\net35\MongoDB.Driver.dll</HintPath>
+    </Reference>
     <Reference Include="NHibernate">
       <HintPath>..\packages\NHibernate.3.3.3.4001\lib\Net35\NHibernate.dll</HintPath>
     </Reference>
@@ -54,6 +60,7 @@
   <ItemGroup>
     <Compile Include="ContainerCommandDispatcher.cs" />
     <Compile Include="ContainerEventPublisher.cs" />
+    <Compile Include="Data\CustomerClassMap.cs" />
     <Compile Include="Data\LoanClassMap.cs" />
     <Compile Include="Data\LoanRepository.cs" />
     <Compile Include="Data\PaymentClassMap.cs" />

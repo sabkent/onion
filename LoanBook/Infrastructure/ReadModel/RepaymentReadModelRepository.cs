@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Core.ReadModel;
+using MongoDB.Driver;
 using NHibernate.Mapping;
 
 namespace Infrastructure.ReadModel
@@ -21,7 +22,12 @@ namespace Infrastructure.ReadModel
 
         public void Add(Repayment repayment)
         {
-            throw new NotImplementedException();
+            var client = new MongoClient("mongodb://localhost");
+            var server = client.GetServer();
+            var mongoDatabase = server.GetDatabase("LoanShark");
+            
+            var collection = mongoDatabase.GetCollection<Repayment>("ActiveRepayment");
+            collection.Save(repayment);
         }
     }
 }

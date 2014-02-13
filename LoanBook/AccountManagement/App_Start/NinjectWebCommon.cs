@@ -2,6 +2,8 @@ using AccountManagement.Web.Common;
 using Core;
 using Core.Commands;
 using Core.Events;
+using Core.ReadModel;
+using Infrastructure.ReadModel;
 using Services.Application;
 using Services.CommandHandlers;
 using Services.EventSubscribers;
@@ -82,6 +84,9 @@ namespace AccountManagement.App_Start
             kernel.Bind<IHandleCommand<ApplyForLoan>>().To<ApplyForLoanCommandHandler>();
 
             kernel.Bind<ISubscribeToEvent<LoanApplicationAccepted>>().To<LoanApplicationAcceptedSignalClient>();
+            kernel.Bind<ISubscribeToEvent<LoanApplicationAccepted>>().To<LoanApplicationAcceptedReadModelSync>();
+
+            kernel.Bind<IRepaymentReadModelRepository>().To<RepaymentReadModelRepository>();
         }        
     }
 }

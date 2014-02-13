@@ -1,4 +1,5 @@
-﻿using Core.Events;
+﻿using System;
+using Core.Events;
 using Core.ReadModel;
 
 namespace Services.EventSubscribers
@@ -7,9 +8,14 @@ namespace Services.EventSubscribers
     {
         private readonly IRepaymentReadModelRepository _repayments;
 
+        public LoanApplicationAcceptedReadModelSync(IRepaymentReadModelRepository repayments)
+        {
+            _repayments = repayments;
+        }
+
         public void Notify(LoanApplicationAccepted @event)
         {
-            var repayment = new Repayment {LoanId = @event.LoanId};
+            var repayment = new Repayment {LoanId = @event.LoanId, RepaymentId = Guid.NewGuid()};
 
             _repayments.Add(repayment);
         }

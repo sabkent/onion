@@ -6,6 +6,8 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
 using AccountManagement.Web.Common;
+using Core.ReadModel;
+using MongoDB.Bson.Serialization;
 using Ninject;
 
 namespace AccountManagement
@@ -24,6 +26,12 @@ namespace AccountManagement
 
             //var kernel = new StandardKernel();
             //GlobalConfiguration.Configuration.DependencyResolver = new NinjectDependencyResolver(kernel);
+
+            BsonClassMap.RegisterClassMap<Repayment>(r =>
+            {
+                r.AutoMap();
+                r.MapIdProperty(x => x.RepaymentId);
+            });
         }
     }
 }

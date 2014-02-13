@@ -105,3 +105,7 @@ C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Microsoft.Owin.Host.Sys
 C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Microsoft.Owin.Security.xml
 C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Messaging.ClientSide.dll
 C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\Messaging.ClientSide.pdb
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\MongoDB.Driver.dll
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\MongoDB.Bson.dll
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\MongoDB.Driver.xml
+C:\Projects\Sandbox\onion\LoanBook\AccountManagement\bin\MongoDB.Bson.xml

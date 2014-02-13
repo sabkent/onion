@@ -44,6 +44,7 @@
     <Compile Include="Commands\MakePaymentCommand.cs" />
     <Compile Include="Commands\MakePaymentResult.cs" />
     <Compile Include="Data\ILoanRepository.cs" />
+    <Compile Include="Entities\Customer.cs" />
     <Compile Include="Entities\Loan.cs" />
     <Compile Include="Entities\Payment.cs" />
     <Compile Include="Events\ISubscribeToEvent.cs" />
