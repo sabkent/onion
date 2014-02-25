@@ -43,10 +43,14 @@
     <Compile Include="Commands\IHandleCommand.cs" />
     <Compile Include="Commands\MakePaymentCommand.cs" />
     <Compile Include="Commands\MakePaymentResult.cs" />
+    <Compile Include="Data\ICustomerRepository.cs" />
     <Compile Include="Data\ILoanRepository.cs" />
+    <Compile Include="Entities\Aggregate.cs" />
     <Compile Include="Entities\Customer.cs" />
+    <Compile Include="Entities\IEvent.cs" />
     <Compile Include="Entities\Loan.cs" />
     <Compile Include="Entities\Payment.cs" />
+    <Compile Include="Events\CustomerAddressChanged.cs" />
     <Compile Include="Events\ISubscribeToEvent.cs" />
     <Compile Include="Events\LoanApplicationAccepted.cs" />
     <Compile Include="IBootstrap.cs" />
